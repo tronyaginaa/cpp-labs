@@ -25,19 +25,29 @@ int solution(double a, double b, double c, double &x1, double &x2){
     return 2;
 }
 
-int main() {
-    double a, b ,c;
+void input(double &a, double &b, double &c){
     std::cout << "Enter the values ​​of the coefficients a,b and c\n";
     std::cin >> a >> b >> c;
-    double x1, x2;
-    int numOfSolutions;
-    numOfSolutions = solution(a, b, c, x1, x2);
+    return;
+}
+
+void output(int numOfSolutions, double x1, double x2){
     if (!numOfSolutions)
         std::cout << "No any solutions\n";
     else if (numOfSolutions == 1)
         std::cout << "One solution: x = " << x1 << "\n";
     else
         std::cout << "x1 = " << x1 << " x2 = " << x2 << "\n";
+    return;
+}
+
+int main() {
+    double a, b ,c;
+    input(a, b ,c);
+    double x1, x2;
+    int numOfSolutions;
+    numOfSolutions = solution(a, b, c, x1, x2);
+    output(numOfSolutions, x1, x2);
     return 0;
 }
 
