@@ -11,4 +11,4 @@
 *.ilk
 *.user
 *.log
-
+*.DS_Store
