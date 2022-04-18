@@ -1,6 +1,7 @@
 
 *.ipch
 *.db
+.suo
 *.exe
 *.pdb
 *.obj
