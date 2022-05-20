@@ -53,6 +53,7 @@ class Student{
 public:
     string name;
     Student(string name_): name(name_) {};
+    virtual void solveEQ(vector<EQ>& task, queue<Answer>& studentAnswer);
 };
 
 class GoodStudent : Student{
