@@ -24,6 +24,10 @@ Solution EQ::correctSolution(){
     return s;
 }
 
+void Student::solveEQ(vector<EQ>& task, queue<Answer>& studentAnswer){
+    cout << "Must be override\n";
+}
+
 void GoodStudent::solveEQ(vector<EQ>& task, queue<Answer>& studentAnswer){
     Solution s;
     for (int i = 0; i < task.size(); i++) {
