@@ -23,6 +23,5 @@ public:
     void setColor(Color_c newColor);
     void deleted();
     Color_c getColor();
-    int GetGemSize() { return SIZE; }
     Color_c cellColor;
 };
